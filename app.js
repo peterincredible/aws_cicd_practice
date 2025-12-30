@@ -17,7 +17,8 @@ const sequelize = new Sequelize(db_name, db_user, db_pass, {
   //     max: 5,
   //     min: 0,
   //     acquire: 30000,
-  //     idle: 10000
+  //     idle: 10000    ssh -i "peter_account_key_pair.pem" ec2-user@107.20.27.223 
+
   //   },
 });
 //'/var/lib/mysql/mysql.sock' -> '/var/run/mysqld/mysqld.sock'
@@ -77,7 +78,7 @@ app.post('/submit/user', (req, res) => {
       res.send(null).status(400);
     });
     
-    // res.send({message:"ok ok ok ok"})
+    // res.send({message:"ok ok ok ok me me "})
   
 })
 
