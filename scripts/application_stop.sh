@@ -3,4 +3,5 @@
 echo "Stopping any existing node servers"
 
 # sudo pkill node
-sudo kill -9 778
+pm2 stop nodejs-app
+pm2 delete nodejs-app
